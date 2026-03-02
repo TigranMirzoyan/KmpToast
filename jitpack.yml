@@ -5,4 +5,4 @@ before_install:
   - chmod +x gradlew
 
 install:
-  - ./gradlew :popups:publishToMavenLocal -Pgroup=com.github.tigranmirzoyan
+  - ./gradlew :popups:publishToMavenLocal
