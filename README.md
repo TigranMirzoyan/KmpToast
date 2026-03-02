@@ -38,7 +38,7 @@ Multiplatform**.
     sourceSets {
         commonMain.dependencies {
             // Replace 'TAG' with the latest version (e.g., 1.0.0)
-            // will be soon
+            implementation("com.github.TigranMirzoyan.KmpToast:popups:1.0.1")
         }
     }
     ```
