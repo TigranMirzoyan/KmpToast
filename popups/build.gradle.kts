@@ -33,17 +33,17 @@ kotlin {
         browser()
     }
 
-    if (org.jetbrains.kotlin.konan.target.HostManager.hostIsMac) {
-        val xcfName = "popups"
-        listOf(
-            iosX64(),
-            iosArm64(),
-            iosSimulatorArm64()
-        ).forEach { iosTarget ->
-            iosTarget.binaries.framework {
-                baseName = xcfName
-                isStatic = true
-            }
+    val xcfName = "popups"
+    val iosTargets = listOf(
+        iosX64(),
+        iosArm64(),
+        iosSimulatorArm64()
+    )
+
+    iosTargets.forEach { iosTarget ->
+        iosTarget.binaries.framework {
+            baseName = xcfName
+            isStatic = true
         }
     }
 

@@ -7,6 +7,7 @@ androidx-activity = "1.12.4"
 androidx-appcompat = "1.7.1"
 androidx-core = "1.17.0"
 androidx-lifecycle = "2.9.6"
+compose-icons = "1.7.3"
 
 composeMultiplatform = "1.10.1"
 composeHotReload = "1.0.0"
@@ -36,6 +37,7 @@ compose-runtime = { module = "org.jetbrains.compose.runtime:runtime", version.re
 compose-ui = { module = "org.jetbrains.compose.ui:ui", version.ref = "composeMultiplatform" }
 compose-uiTooling = { module = "org.jetbrains.compose.ui:ui-tooling", version.ref = "composeMultiplatform" }
 compose-uiToolingPreview = { module = "org.jetbrains.compose.ui:ui-tooling-preview", version.ref = "composeMultiplatform" }
+compose-material-icons = {module = "org.jetbrains.compose.material:material-icons-extended", version.ref = "compose-icons" }
 
 androidx-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "androidx-espresso" }
 androidx-testExt-junit = { module = "androidx.test.ext:junit", version.ref = "androidx-testExt" }
@@ -63,7 +65,8 @@ compose-ui = [
     "compose-foundation",
     "compose-material3",
     "compose-runtime",
-    "compose-ui"
+    "compose-ui",
+    "compose-material-icons"
 ]
 
 
